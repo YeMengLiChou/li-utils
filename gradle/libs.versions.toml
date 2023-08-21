@@ -1,0 +1,151 @@
+[versions] # 版本管理
+
+# ======== 插件版本管理 ==============
+agp                           = "8.1.0"
+org-jetbrains-kotlin-android  = "1.8.0"
+org-jetbrains-kotlin-kapt     = "1.8.0"
+ksp                           = "1.8.20-1.0.11"
+
+# ======== 依赖版本管理 ==============
+core-ktx                      = "1.10.1"
+junit                         = "4.13.2"
+androidx-test-ext-junit       = "1.1.5"
+espresso-core                 = "3.5.1"
+appcompat                     = "1.6.1"
+material                      = "1.9.0"
+annotation                    = "1.6.0"
+
+# the router
+theRouter                     = "1.2.0-beta4"
+
+room                          = "2.5.2"
+
+retrofit                      = "2.9.0"
+# glide
+glide                         = "4.15.1"
+# lifecycle
+lifecycle                     = "2.6.1"
+# activity extensions
+activity-ktx                  = "1.7.2"
+# fragment extensions
+fragment-ktx                  = "1.6.1"
+# gson
+gson                          = "2.10.1"
+# kotlin coroutines
+coroutines                    = "1.7.3"
+# swipe refresh layout
+swipeRefreshLayout            = "1.1.0"
+# okhttp3
+okhttp3                       = "4.10.0"
+# fastKv
+fastKv                        = "2.0.1"
+# tracing
+tracing                       = "1.1.0"
+# xlog
+xlog                          = "1.11.0"
+
+constraintLayout              = "2.1.4"
+
+paging3                       = "3.2.0"
+
+moshi                         = "1.15.0"
+
+security                      = "1.0.0"
+
+preference                    = "1.2.1"
+
+[libraries] # 依赖库声明
+core-ktx                      = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+junit                         = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit       = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core                 = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat                     = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material                      = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# 当出现 No such enum entry LIBRARY_GROUP_PREFIX in org.jetbrains.kotlin.ir.types.impl.IrSimpleTypeImpl@463f430a 时
+# 在对应出错的模块上用 implementation方式依赖该库
+annotation                    = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+tracing                       = { group = "androidx.tracing", name = "tracing-ktx", version.ref = "tracing" }
+
+
+# constraintLayout (use it with api in app module and with compileOnly in sub module when missing class)
+constraintLayout              = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintLayout"}
+
+# swipe refresh layout
+swipeRefreshLayout            = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipeRefreshLayout" }
+
+# theRouter
+theRouter                     = { group = "cn.therouter", name = "router", version.ref = "theRouter" }
+theRouter-apt                 = { group = "cn.therouter", name = "apt", version.ref = "theRouter" }
+
+# glide
+glide                         = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+# activityKtx
+activity-ktx                  = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity-ktx" }
+# fragmentKtx
+fragment-ktx                   = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment-ktx"}
+
+# viewModel
+viewmodel                     = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+viewmodel-savedstate          = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+
+lifecycle-runtime             = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+# ksp annotation processor
+lifecycle-compiler            = { group = "androidx.lifecycle", name = "lifecycle-compiler", version.ref = "lifecycle" }
+
+# gson
+gson                          = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# coroutines core
+coroutines-core               = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+# coroutines for android
+coroutines-android            = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# room
+room-runtime                  = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+# use kapt annotation processor
+room-compiler                 = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+# room coroutines
+room-ktx                      = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+# retrofit
+retrofit                      = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+# retrofit gson converter
+retrofit-moshi                = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+
+# okhttp3
+okhttp                        = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+# okhttp logging interceptor
+okhttp-logging-interceptor    = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+
+# fastKv
+fastKv                        = { group = "io.github.billywei01", name = "fastkv", version.ref = "fastKv" }
+
+# xlog
+xlog                          = { group = "com.elvishew", name = "xlog", version.ref = "xlog" }
+
+# paging3
+paging3                       = { group = "androidx.paging", name = "paging-runtime", version.ref = "paging3" }
+
+moshi                         = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
+moshi-codegen                 = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
+
+# jetpack-security
+security                      = { group = "androidx.security", name = "security-crypto", version.ref = "security" }
+
+preference                    = { group = "androidx.preference", name = "preference-ktx", version.ref = "preference"}
+play-services-basement = { group = "com.google.android.gms", name = "play-services-basement", version = "18.2.0" }
+
+[plugins] # 插件声明
+com-android-application       = { id = "com.android.application", version.ref = "agp" }
+com-android-library           = { id = "com.android.library", version.ref = "agp" }
+org-jetbrains-kotlin-android  = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+org-jetbrains-kotlin-kapt     = { id = "org.jetbrains.kotlin.kapt", version.ref = "org-jetbrains-kotlin-kapt" }
+com-google-devtools-ksp       = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+
+[bundles] # 依赖组合声明
+coroutines                    = ["coroutines-core", "coroutines-android"]
+viewModel                     = ["viewmodel", "viewmodel-savedstate"]
+room                          = ["room-ktx", "room-runtime"]
+retrofit                      = ["retrofit", "retrofit-moshi", "okhttp-logging-interceptor"]
