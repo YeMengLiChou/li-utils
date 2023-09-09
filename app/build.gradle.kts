@@ -7,6 +7,15 @@ plugins {
 
 publishing {
     group = "com.github.YeMengLiChou"
+
+    publications {
+        create("maven_public", MavenPublication::class) {
+            groupId = "com.github.YeMengLiChou"
+            artifactId = "li-utils"
+            version = "0.0.0"
+//            from(components.getByName("library"))
+        }
+    }
 }
 
 android {
