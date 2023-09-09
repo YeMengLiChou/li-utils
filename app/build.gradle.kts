@@ -9,11 +9,14 @@ publishing {
     group = "com.github.YeMengLiChou"
 
     publications {
-        create("maven_public", MavenPublication::class) {
+        register("release", MavenPublication::class) {
             groupId = "com.github.YeMengLiChou"
             artifactId = "li-utils"
             version = "0.0.0"
-            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+            afterEvaluate { // 在所有的配置都完成之后执行
+                // 从当前 module 的 release 包中发布
+                from(components["release"])
+            }
         }
     }
 }
