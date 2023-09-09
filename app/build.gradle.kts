@@ -13,7 +13,7 @@ publishing {
             groupId = "com.github.YeMengLiChou"
             artifactId = "li-utils"
             version = "0.0.0"
-//            from(components.getByName("library"))
+            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
         }
     }
 }
