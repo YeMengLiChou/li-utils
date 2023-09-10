@@ -2,24 +2,24 @@
 plugins {
     alias(libs.plugins.com.android.library)
     alias(libs.plugins.org.jetbrains.kotlin.android)
-    id("maven-publish")
+//    `maven-publish`
 }
 
-publishing {
-    group = "com.github.YeMengLiChou"
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            register("release", MavenPublication::class) {
+//                // 从当前 module 的 release 包中发布
+//                from(components["release"])
+//                groupId = "com.github.YeMengLiChou"
+//                artifactId = "release"
+//                version = "0.0.0"
+//            }
+//        }
+//    }
+//}
 
-    publications {
-        register("release", MavenPublication::class) {
-            groupId = "com.github.YeMengLiChou"
-            artifactId = "li-utils"
-            version = "0.0.0"
-            afterEvaluate { // 在所有的配置都完成之后执行
-                // 从当前 module 的 release 包中发布
-                from(components["release"])
-            }
-        }
-    }
-}
+
 
 android {
     namespace = "com.li.utils"
