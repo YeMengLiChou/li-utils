@@ -1,4 +1,4 @@
-package com.sll.lib_framework.base.activity
+package com.li.utils.framework.base.activity
 
 import android.os.Bundle
 import androidx.viewbinding.ViewBinding

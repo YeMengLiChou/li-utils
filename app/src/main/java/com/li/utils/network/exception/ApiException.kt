@@ -1,6 +1,5 @@
 package com.li.utils.network.exception
 
-import com.li.utils.network.exception.ERROR
 
 /**
  *

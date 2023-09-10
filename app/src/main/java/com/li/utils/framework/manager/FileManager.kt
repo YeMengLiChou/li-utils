@@ -1,22 +1,14 @@
 package com.li.utils.framework.manager
 
-import android.app.Activity
 import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Build
-import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.net.toFile
-import androidx.core.net.toUri
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.commit
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException

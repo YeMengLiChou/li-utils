@@ -1,4 +1,4 @@
-package com.sll.lib_framework.base.adapter
+package com.li.utils.framework.base.adapter
 
 import android.util.SparseArray
 import androidx.core.util.size

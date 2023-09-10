@@ -1,4 +1,4 @@
-package com.sll.lib_framework.base.fragment
+package com.li.utils.framework.base.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

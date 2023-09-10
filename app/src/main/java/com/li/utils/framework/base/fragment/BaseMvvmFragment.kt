@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.viewbinding.ViewBinding
 import com.li.utils.ext.common.lazyNone
+import com.li.utils.framework.base.fragment.BaseBindingFragment
 import com.li.utils.framework.base.interfaces.IViewModel
 
 /**
